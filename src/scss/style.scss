@@ -1,0 +1,52 @@
+@import 'normalize.scss';
+@import 'var.scss';
+@import 'mixin.scss';
+@import 'fonts.scss';
+
+
+.visually-hidden:not(:active):not(:focus){
+   position: absolute;
+
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   bottom: 0;
+   padding: 0;
+
+   white-space: nowrap;
+
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/form.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/founder.scss';
+@import 'blocks/plans.scss';
+@import 'blocks/free.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/button.scss';
