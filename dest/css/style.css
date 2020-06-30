@@ -163,44 +163,16 @@ template {
 
 @font-face {
   font-style: normal;
-  font-family: Lato;
+  font-family: 'Open Sans';
   font-weight: normal;
-  src: url("../../dest/fonts/Lato-Regular.woff") format("woff"), url("../../dest/fonts/Lato-Regular.woff2") format("woff2");
+  src: url("../../dest/fonts/OpenSans-Regular.woff") format("woff"), url("../../dest/fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-style: normal;
-  font-family: Lato;
+  font-family: 'Open Sans';
   font-weight: bold;
-  src: url("../../dest/fonts/Lato-Bold.woff") format("woff"), url("../../dest/fonts/Lato-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: italic;
-  font-family: Lato;
-  font-weight: normal;
-  src: url("../../dest/fonts/Lato-Italic.woff") format("woff"), url("../../dest/fonts/Lato-Italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: normal;
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("../../dest/fonts/Montserrat-Regular.woff") format("woff"), url("../../dest/fonts/Lato-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: normal;
-  font-family: Montserrat;
-  font-weight: bold;
-  src: url("../../dest/fonts/Montserrat-Bold.woff") format("woff"), url("../../dest/fonts/Lato-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: italic;
-  font-family: Montserrat;
-  font-weight: normal;
-  src: url("../../dest/fonts/Montserrat-Italic.woff") format("woff"), url("../../dest/fonts/Lato-Italic.woff2") format("woff2");
+  src: url("../../dest/fonts/OpenSans-Bold.woff") format("woff"), url("../../dest/fonts/OpenSans-Bold.woff2") format("woff2");
 }
 
 .visually-hidden:not(:active):not(:focus) {
@@ -229,11 +201,6 @@ img {
   height: auto;
 }
 
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -242,4 +209,83 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.wrapper__outer {
+  padding: 0 20px;
+}
+
+.header__nav {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.nav {
+  min-height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link--active {
+  font-weight: bold;
+  position: relative;
+}
+
+.nav__link--active::after {
+  content: '';
+  background-color: black;
+  height: 2px;
+  width: 7px;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav__link + .nav__link {
+  padding-left: 50px;
+}
+
+.nav__link a {
+  color: #303030;
 }

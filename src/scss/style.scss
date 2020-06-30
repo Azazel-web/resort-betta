@@ -24,13 +24,10 @@
 *::after {
    box-sizing: border-box;
 }
+
 img {
    max-width: 100%;
    height: auto;
-}
-.container {
-   max-width: 1180px;
-   margin: 0 auto;
 }
 ul {
    margin: 0;
@@ -40,3 +37,21 @@ ul {
 a {
    text-decoration: none;
 }
+body {
+   font-family: 'Open Sans';
+   font-size: 14px;
+   line-height: 19px;
+}
+.container {
+   max-width: 1060px;
+   margin: 0 auto;
+}
+.wrapper {
+   &__outer {
+      padding: 0 20px;
+   }
+}
+
+
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
