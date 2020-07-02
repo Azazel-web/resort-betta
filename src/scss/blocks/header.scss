@@ -1,12 +1,12 @@
 .header {
-   &__nav {
-      position: relative;
-   }
+   position: relative;
    &__logo {
       position: absolute;
-      left: 50%;
       top: 20px;
+      left: 50%;
       transform: translateX(-50%);
-      cursor: pointer;
+   }
+   &__intro {
+      padding-top: 205px;
    }
 }

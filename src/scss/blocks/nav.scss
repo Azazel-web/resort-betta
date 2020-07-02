@@ -4,17 +4,22 @@
    flex-grow: 1;
    justify-content: space-between;
    align-items: center;
+   color: #303030;
    &__list {
-      &-left {
          display: flex;
-      }
-      &-right {
-         display: flex;
-      }
    }
    &__link {
+      height: 30px;
+      transition: linear .2s;
+      cursor: pointer;
+      & + .nav__link {
+         margin-left: 50px;
+      }
       &--active {
          font-weight: bold;
+      }      
+      &--active,
+      &:hover {
          position: relative;
          &::after {
             content: '';
@@ -23,13 +28,9 @@
             width: 7px;
             position: absolute;
             bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
          }
-      }
-      & + .nav__link {
-         padding-left: 50px;
-      }
-      & a {
-         color: #303030;
       }
    }
 }

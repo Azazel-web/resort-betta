@@ -1,0 +1,29 @@
+.button {
+   padding: 10px 50px 10px 20px;
+   color: #1A1424;
+   border: 1px solid #1A1424;
+   border-radius: 20px;
+   cursor: pointer;
+   &:hover {
+      background-color: #dcc86f;
+   }
+   &:active {
+      background-color: #d4b529;
+   }
+   &--first {
+   position: absolute;
+   right: 12%;
+   bottom: 0;
+   &:before {
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      transform: rotate(45deg);
+   }
+   }
+}

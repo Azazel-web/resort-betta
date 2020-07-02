@@ -36,6 +36,7 @@ ul {
 }
 a {
    text-decoration: none;
+   color: inherit;
 }
 body {
    font-family: 'Open Sans';
@@ -43,15 +44,14 @@ body {
    line-height: 19px;
 }
 .container {
-   max-width: 1060px;
+   max-width: 1090px;
    margin: 0 auto;
-}
-.wrapper {
-   &__outer {
-      padding: 0 20px;
-   }
+   padding: 0 15px;
 }
 
 
 @import 'blocks/header.scss';
 @import 'blocks/nav.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/button.scss';
