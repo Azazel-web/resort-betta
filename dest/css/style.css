@@ -333,7 +333,7 @@ body {
   font-family: Spectral;
   font-size: 48px;
   line-height: 42px;
-  color: #FEFEFE;
+  color: #fefefe;
   width: 30%;
   margin: 0 auto;
 }
@@ -341,11 +341,11 @@ body {
 .intro__subtitle {
   font-size: 22px;
   line-height: 30px;
-  color: #FDFDFD;
+  color: #fdfdfd;
 }
 
 .promo {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   background-image: url("../img/promo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,22 +354,22 @@ body {
 }
 
 .promo__title {
+  margin-bottom: 27px;
   font-family: Spectral;
   font-weight: bold;
   font-size: 48px;
   line-height: 73px;
-  color: #312C3A;
-  margin-bottom: 27px;
+  color: #312c3a;
 }
 
 .promo__text {
   position: absolute;
   top: 40%;
   left: 39%;
-  color: #896F50;
+  color: #896f50;
   padding: 30px;
   width: 610px;
-  background: #FFFFFF;
+  background: #fff;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -391,8 +391,8 @@ body {
 
 .button {
   padding: 10px 50px 10px 20px;
-  color: #1A1424;
-  border: 1px solid #1A1424;
+  color: #1a1424;
+  border: 1px solid #1a1424;
   border-radius: 20px;
   cursor: pointer;
 }
