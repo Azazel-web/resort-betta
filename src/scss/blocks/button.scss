@@ -1,19 +1,11 @@
 .button {
+   position: relative;
    padding: 10px 50px 10px 20px;
    color: #1a1424;
    border: 1px solid #1a1424;
    border-radius: 20px;
    cursor: pointer;
-   &:hover {
-      background-color: #dcc86f;
-   }
-   &:active {
-      background-color: #d4b529;
-   }
-   &--first {
-   position: absolute;
-   right: 12%;
-   bottom: 0;
+   
    &:before {
       content: '';
       height: 10px;
@@ -25,5 +17,16 @@
       right: 15px;
       transform: rotate(45deg);
    }
+   
+   &:hover {
+      background-color: #1a1424;
+      color: #fff;
+      &:before {
+         border-color: #fff;
+      }
+   }
+
+   &--first {
+
    }
 }

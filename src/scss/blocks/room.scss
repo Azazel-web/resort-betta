@@ -1,0 +1,29 @@
+.room {
+   &__title {
+      padding: 60px 0;
+   }
+   &__cards {
+      margin: 0 55px 110px 30px;
+   }
+   &__item {
+      margin-right: 40px;
+      &-photo {
+         border-radius: 4px;
+         position: relative;
+      }
+   }
+
+}
+
+.room__item-title {
+   margin-top: 17px;
+   font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #1a1424;
+}
+.room__item-price {
+}
+.room__title-description {
+}

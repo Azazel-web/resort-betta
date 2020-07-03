@@ -48,10 +48,18 @@ body {
    margin: 0 auto;
    padding: 0 15px;
 }
-
+.title {
+   font-family: Spectral;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 55px;
+   text-align: center;
+   color: #312c3a;
+}
 
 @import 'blocks/header.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/intro.scss';
 @import 'blocks/promo.scss';
+@import 'blocks/room.scss';
 @import 'blocks/button.scss';
