@@ -28,6 +28,7 @@
 img {
    max-width: 100%;
    height: auto;
+   vertical-align: middle;
 }
 ul {
    margin: 0;
@@ -63,3 +64,4 @@ body {
 @import 'blocks/promo.scss';
 @import 'blocks/room.scss';
 @import 'blocks/button.scss';
+@import 'blocks/svg-icon.scss';

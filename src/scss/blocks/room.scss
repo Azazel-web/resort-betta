@@ -1,28 +1,83 @@
 .room {
+   padding-top: 60px;
+   padding-bottom: 107px;
+   position: relative;
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 269px;
+      height: 2px;
+      background-color: #b58c5d;
+   }
    &__title {
-      padding: 60px 0;
+      padding-bottom: 60px;
    }
    &__cards {
-      margin: 0 55px 110px 30px;
+      margin: 0 55px 0 30px;
+      display: flex;
+      flex-basis: 33.33333%;
    }
    &__item {
-      margin-right: 40px;
-      &-photo {
-         border-radius: 4px;
-         position: relative;
+      width: 33.33333%;
+      margin-right: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:last-child {
+         margin-right: 0;
       }
+      &-photo {
+         display: flex;
+         & img {
+            border-radius: 4px;
+         }
+      }
+      &-content {
+         display: flex;
+         flex-direction: column;
+
+         padding-bottom: 25px;
+
+         border-radius: 4px;
+         border: 1px solid #dddada;
+      }
+      &-title {
+         margin-top: 17px;
+         
+         font-weight: bold;
+         font-size: 20px;
+         line-height: 27px;      
+         color: #1a1424;
+      }
+      &-price {
+         font-size: 18px;
+         line-height: 25px;
+         color: rgba(26, 20, 36, 0.9);
+      }
+      &-description {
+         padding-bottom: 15px;
+         font-size: 13px;
+         line-height: 18px;
+         color: #6C656F;
+      }
+   }
+   &__detailed {
+      margin-bottom: 14px;
+
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: $secondary-color-button;
+      cursor: pointer;
    }
 
 }
 
-.room__item-title {
-   margin-top: 17px;
-   font-weight: bold;
-font-size: 20px;
-line-height: 27px;
-
-color: #1a1424;
-}
 .room__item-price {
 }
 .room__title-description {

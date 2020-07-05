@@ -1,0 +1,13 @@
+.svg-icon {
+   fill: currentColor;
+   &--button-next {
+   position: absolute;
+   right: 14%;
+   top: 50%;
+
+   height: 16px;
+   width: 16px;
+   
+   transform: translateY(-50%);
+   }
+}
