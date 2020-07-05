@@ -1,38 +1,47 @@
 .promo {
+   padding: 150px 0;
+
    background-color: #ebebeb;
    background-image: url('../img/promo-bg.png');
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 150px 0;
-   position: relative;
    &__title {
       margin-bottom: 27px;
+      
       text-align: left;
       font-size: 48px;
       line-height: 73px;
    }
+   &__body {
+      display: flex;
+   }
+   &__img {
+      height: 100%;
+   }
+   &__content {
+      position: relative;
+   }
    &__text {
-      position: absolute;
-      top: 40%;
-      left: 39%;
-
-      color: #896f50;
+      margin-top: 17px;
+      margin-bottom: 45px;
+      margin-left: -50px;
       padding: 30px;
       width: 610px;
 
-      background: #fff;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-   }
-   &__wrapper {
-      position: relative;
+      background-color: #fff;
+
+      text-align: justify;
+      color: #896f50;
    }
    &__svg {
       position: absolute;
       bottom: 10px;
-      left: 38%;
+      left: 10px;
    }
-   &__button {
-      position: relative;
+   &__more {
+      display: flex;
+      justify-content: flex-end;
    }
 }

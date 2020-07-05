@@ -5,9 +5,7 @@
    transition: .3s all;
    
    &--primary {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      position: relative;
       padding: 10px 50px 10px 20px;
 
       border: 1px solid $primary-color-button;

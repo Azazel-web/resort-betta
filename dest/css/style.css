@@ -362,12 +362,11 @@ body {
 }
 
 .promo {
+  padding: 150px 0;
   background-color: #ebebeb;
   background-image: url("../img/promo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 0;
-  position: relative;
 }
 
 .promo__title {
@@ -377,40 +376,63 @@ body {
   line-height: 73px;
 }
 
+.promo__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__img {
+  height: 100%;
+}
+
+.promo__content {
+  position: relative;
+}
+
 .promo__text {
-  position: absolute;
-  top: 40%;
-  left: 39%;
-  color: #896f50;
+  margin-top: 17px;
+  margin-bottom: 45px;
+  margin-left: -50px;
   padding: 30px;
   width: 610px;
-  background: #fff;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.promo__wrapper {
-  position: relative;
+  background-color: #fff;
+  text-align: justify;
+  color: #896f50;
 }
 
 .promo__svg {
   position: absolute;
   bottom: 10px;
-  left: 38%;
+  left: 10px;
 }
 
-.promo__button {
-  position: relative;
+.promo__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .room {
-  padding-top: 60px;
   padding-bottom: 107px;
+}
+
+.room__wrapper {
   position: relative;
 }
 
-.room::before {
+.room__title {
+  padding: 60px 0;
+  position: relative;
+}
+
+.room__title::before {
   content: "";
   display: block;
   position: absolute;
@@ -424,8 +446,13 @@ body {
   background-color: #b58c5d;
 }
 
-.room__title {
-  padding-bottom: 60px;
+.room__more {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .room__cards {
@@ -437,9 +464,25 @@ body {
       flex-basis: 33.33333%;
 }
 
+.room__places {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px;
+  background-color: #34c6bd;
+}
+
+.room__places-number {
+  color: #fff;
+}
+
 .room__item {
-  width: 33.33333%;
-  margin-right: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,19 +493,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.room__item:last-child {
-  margin-right: 0;
+  margin-right: 42px;
+  border-radius: 4px;
+  border: 1px solid #dddada;
+  border-top: none;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
 }
 
 .room__item-photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  z-index: -1;
 }
 
-.room__item-photo img {
+.room__item-img {
   border-radius: 4px;
 }
 
@@ -474,13 +519,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 25px;
-  border-radius: 4px;
-  border: 1px solid #dddada;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
 }
 
 .room__item-title {
-  margin-top: 17px;
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
@@ -488,16 +537,47 @@ body {
 }
 
 .room__item-price {
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 25px;
   color: rgba(26, 20, 36, 0.9);
 }
 
+.room__item-hidden {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
 .room__item-description {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-size: 13px;
   line-height: 18px;
   color: #6C656F;
+}
+
+.room__item:last-child {
+  margin-right: 0;
+}
+
+.room__item:hover {
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.room__item:hover .button--secondary {
+  background-color: #4ea842;
+  color: #fff;
+}
+
+.room__item:hover .room__item-hidden {
+  height: 100px;
+}
+
+.room__item:hover .room__item-content {
+  margin-top: -120px;
 }
 
 .room__detailed {
@@ -510,6 +590,15 @@ body {
   cursor: pointer;
 }
 
+.room__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .button {
   cursor: pointer;
   margin: 0;
@@ -519,9 +608,7 @@ body {
 }
 
 .button--primary {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: relative;
   padding: 10px 50px 10px 20px;
   border: 1px solid #1a1424;
   border-radius: 20px;

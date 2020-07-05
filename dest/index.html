@@ -131,6 +131,17 @@
 		" />
          </g>
       </symbol>
+      <symbol id="check" viewBox="0 0 24 24">
+         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+      </symbol>
+      <symbol id="room-places" viewBox="0 0 17 26">
+         <path
+            d="M8.33383 11.7818C11.6778 11.7818 14.3983 9.13925 14.3983 5.89098C14.3982 2.64265 11.6777 0 8.33383 0C4.98931 0 2.26831 2.64265 2.26831 5.89098C2.26831 9.13918 4.98931 11.7818 8.33383 11.7818Z"
+            fill="white" />
+         <path
+            d="M16.6364 19.9488L15.5885 14.791C15.4455 14.0879 14.7561 13.5371 14.0188 13.5371H2.64788C1.9106 13.5371 1.22115 14.0879 1.07822 14.7911L0.0302439 19.9488C-0.105321 20.6157 0.226847 21.4579 0.786447 21.8662C0.965709 21.997 5.21232 25.0695 8.33334 25.0695C11.4544 25.0695 15.701 21.997 15.8802 21.8662C16.4398 21.4579 16.772 20.6157 16.6364 19.9488Z"
+            fill="white" />
+      </symbol>
    </svg>
    <!-- Header -->
    <header class="header">
@@ -167,78 +178,139 @@
    <div class="promo">
       <div class="container">
          <div class="promo__title title">Курорт Бетта</div>
-         <img src="img/promo.jpg" alt="resort-betta">
-         <div class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</div>
-         <div class="promo__wrapper">
-            <svg class="promo__svg" width="110" height="81">
-               <use xlink:href="#promo-frame"></use>
-            </svg>
-         </div>
-         <div class="promo__button">
-            <a class="button button--primary">
-               <span>Подробнее</span>
-               <span class="svg-icon svg-icon--button-next">
-                  <svg width="16" height="16">
-                     <use xlink:href="#button-next"></use>
+         <div class="promo__body">
+            <div class="promo__img">
+               <img src="img/promo.jpg" alt="resort-betta">
+            </div>
+            <div class="promo__content">
+
+               <div class="promo__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa
+                  qui officia deserunt mollit anim id est laborum.
+               </div>
+
+               <span class="promo__svg">
+                  <svg width="110" height="81">
+                     <use xlink:href="#promo-frame"></use>
                   </svg>
                </span>
-            </a>
-         </div>
+
+               <div class="promo__more">
+                  <a class="button button--primary">
+                     <span>Подробнее</span>
+                     <span class="svg-icon svg-icon--button-next">
+                        <svg width="16" height="16">
+                           <use xlink:href="#button-next"></use>
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+            </div><!-- /.promo__content -->
+         </div><!-- /.promo__body -->
       </div><!-- /.container -->
    </div><!-- /.promo -->
 
    <!-- Room -->
    <div class="room">
       <div class="container">
-         <div class="room__title title">Номера</div>
 
-         <a class="button button--primary " href="">
-            <span>Все номера</span>
-            <span class="svg-icon svg-icon--button-next">
-               <svg width="16" height="16">
-                  <use xlink:href="#button-next"></use>
-               </svg>
-            </span>
-         </a>
+         <div class="room__wrapper">
+            <div class="room__title title">Номера</div>
+
+            <div class="room__more">
+               <a class="button button--primary " href="">
+                  <span>Все номера</span>
+                  <span class="svg-icon svg-icon--button-next">
+                     <svg width="16" height="16">
+                        <use xlink:href="#button-next"></use>
+                     </svg>
+                  </span>
+               </a>
+            </div>
+         </div>
 
          <div class="room__cards">
             <div class="room__item">
-               <div class="room__item-photo"><img src="img/cards-room-2.jpg" alt="room"></div>
+               <div class="room__item-photo">
+                  <img class="room__item-img" src="img/cards-room-2.jpg" alt="room">
+                  <div class="room__places">
+                     <svg width="17" height="26">
+                        <use xlink:href="#room-places"></use>
+                     </svg>
+                     <span class="room__places-number">1 - 2</span>
+                  </div>
+               </div>
                <div class="room__item-content">
-                  <div class="room__item-title">Двухместный номер</div>
+                  <div class="room__item-title">Двухместный номер с балконом</div>
                   <div class="room__item-price">1500-2000 Р/сутки</div>
-                  <div class="room__item-description"> Бесплатная автостоянка,
-                     Wi-Fi, спутниковое TV,
-                     xолодильник, душ, кондиционер, кухня, сейф</div>
-                  <div class="room__detailed"><a href="#">Подробнее</a></div>
+                  <div class="room__item-hidden">
+                     <div class="room__item-description">
+                        <svg width="17" height="17" fill="#14ad00">
+                           <use xlink:href="#check"></use>
+                        </svg>
+                        Бесплатная автостоянка,
+                        Wi-Fi, спутниковое TV,
+                        xолодильник, душ, кондиционер, кухня, сейф</div>
+                     <div class="room__detailed"><a href="#">Подробнее</a></div>
+                  </div>
+                  <div class="room__order"><a href="#" class="button button--secondary">Забронировать</a></div>
+               </div>
+            </div>
+            <div class="room__item">
+               <div class="room__item-photo">
+                  <img src="img/cards-room-2.jpg" alt="room">
+                  <div class="room__places">
+                     <svg width="17" height="26">
+                        <use xlink:href="#room-places"></use>
+                     </svg>
+                     <span class="room__places-number">1 - 2</span>
+                  </div>
+               </div>
+               <div class="room__item-content">
+                  <div class="room__item-title">Двухместный номер с балконом</div>
+                  <div class="room__item-price">1500-2000 Р/сутки</div>
+                  <div class="room__item-hidden">
+                     <div class="room__item-description">
+                        <svg width="17" height="17" fill="#14ad00">
+                           <use xlink:href="#check"></use>
+                        </svg>
+                        Бесплатная автостоянка,
+                        Wi-Fi, спутниковое TV,
+                        xолодильник, душ, кондиционер, кухня, сейф</div>
+                     <div class="room__detailed"><a href="#">Подробнее</a></div>
+                  </div>
                   <a href="#" class="button button--secondary">Забронировать</a>
                </div>
             </div>
             <div class="room__item">
-               <div class="room__item-photo"><img src="img/cards-room-2.jpg" alt="room"></div>
-               <div class="room__item-content">
-                  <div class="room__item-title">Двухместный номер с балконом</div>
-                  <div class="room__item-price">1500-2000 Р/сутки</div>
-                  <div class="room__item-description"> Бесплатная автостоянка,
-                     Wi-Fi, спутниковое TV,
-                     xолодильник, душ, кондиционер, кухня, сейф</div>
-                  <div class="room__detailed"><a href="#">Подробнее</a></div>
-                  <a href="#" class="button button--secondary">Забронировать</a>
+               <div class="room__item-photo">
+                  <img src="img/cards-room-2.jpg" alt="room">
+                  <div class="room__places">
+                     <svg width="17" height="26">
+                        <use xlink:href="#room-places"></use>
+                     </svg>
+                     <span class="room__places-number">1 - 2</span>
+                  </div>
                </div>
-            </div>
-            <div class="room__item">
-               <div class="room__item-photo"><img src="img/cards-room-2.jpg" alt="room"></div>
                <div class="room__item-content">
                   <div class="room__item-title">Двухместный номер с балконом</div>
                   <div class="room__item-price">1500-2000 Р/сутки</div>
-                  <div class="room__item-description"> Бесплатная автостоянка,
-                     Wi-Fi, спутниковое TV,
-                     xолодильник, душ, кондиционер, кухня, сейф</div>
-                  <div class="room__detailed"><a href="#">Подробнее</a></div>
+                  <div class="room__item-hidden">
+                     <div class="room__item-description">
+                        <svg width="17" height="17" fill="#14ad00">
+                           <use xlink:href="#check"></use>
+                        </svg>
+                        Бесплатная автостоянка,
+                        Wi-Fi, спутниковое TV,
+                        xолодильник, душ, кондиционер, кухня, сейф</div>
+                     <div class="room__detailed"><a href="#">Подробнее</a></div>
+                  </div>
                   <a href="#" class="button button--secondary">Забронировать</a>
                </div>
             </div>
