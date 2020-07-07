@@ -633,9 +633,26 @@ a {
 .slider__container {
   max-width: 560px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .7s ease;
+  transition: -webkit-transform .7s ease;
+  -o-transition: transform .7s ease;
+  transition: transform .7s ease;
+  transition: transform .7s ease, -webkit-transform .7s ease;
 }
 
 .slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
   color: #fff;
   text-align: center;
 }

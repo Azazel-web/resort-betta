@@ -3,8 +3,16 @@
    &__container {
       max-width: 560px;
       margin: 0 auto;
+      overflow: hidden;
+   }
+   &__items {
+      display: flex;
+      overflow: hidden;
+      transition: transform .7s ease;
    }
    &__item {
+      flex: 0 0 100%;
+      max-width: 100%;
       color: #fff;
       text-align: center;
       &-name {
