@@ -1,0 +1,31 @@
+.social {
+   &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__item {
+      margin-left: 10px;
+      max-width: 42px;
+      height: 42px;
+      align-items: center;
+   }
+   &__link {
+      display: block;
+      max-width: 42px;
+      height: 42px;
+
+      & svg path {
+         fill: #303030;
+         transition: .3s all;
+      }
+      &:hover {
+         & circle {
+            fill: #303030;
+         }
+         & svg path {
+            fill: #fff;
+         }
+      }
+   }
+}

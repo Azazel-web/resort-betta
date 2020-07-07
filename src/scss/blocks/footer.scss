@@ -1,14 +1,16 @@
 .footer {
    &__container {
-      padding: 0;
-   }
-   &__inner {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 0;
       padding-top: 75px;
    }
    &__nav {
+      margin-top: 10px;
       display: flex;
+      width: 300px;
    }
    &__link {
       padding-left: 30px;
@@ -19,11 +21,16 @@
          font-weight: bold;
       }
    }
-   &__wrapper {
-      position: relative;
+   &__logo {
+      display: block;
+      margin: 0 auto;
    }
    &__social {
+      flex-basis: 100%;
+      width: 100%;
 
+      margin-top: -15px;
+      padding-bottom: 50px;
    }
    &__contacts {
 

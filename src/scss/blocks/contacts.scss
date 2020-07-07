@@ -1,0 +1,17 @@
+.contacts {
+   &__inner {
+      margin-top: 10px;
+      padding-left: 50px;
+      display: flex;
+   }
+   &__tel {
+      margin-top: 8px;
+   }
+   &__link {
+      padding-left: 15px;
+      margin-bottom: 10px;
+      font-size: 21px;
+      line-height: 29px;
+      color: #312c3a;
+   }
+}
