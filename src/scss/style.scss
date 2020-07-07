@@ -19,12 +19,22 @@
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
+body {
+   font-family: 'Open Sans';
+   font-size: 14px;
+   line-height: 19px;
+}
 *,
 *::before,
 *::after {
    box-sizing: border-box;
 }
-
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+p {
+   margin: 0;
+}
 img {
    max-width: 100%;
    height: auto;
@@ -39,11 +49,7 @@ a {
    text-decoration: none;
    color: inherit;
 }
-body {
-   font-family: 'Open Sans';
-   font-size: 14px;
-   line-height: 19px;
-}
+
 .container {
    max-width: 1090px;
    margin: 0 auto;
@@ -63,5 +69,8 @@ body {
 @import 'blocks/intro.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/room.scss';
+@import 'blocks/review.scss';
+@import 'blocks/slider.scss';
 @import 'blocks/button.scss';
 @import 'blocks/svg-icon.scss';
+@import 'blocks/footer.scss';

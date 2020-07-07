@@ -1,0 +1,31 @@
+.footer {
+   &__container {
+      padding: 0;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 75px;
+   }
+   &__nav {
+      display: flex;
+   }
+   &__link {
+      padding-left: 30px;
+      padding-bottom: 17px;
+
+      letter-spacing: 1px;
+      &--active {
+         font-weight: bold;
+      }
+   }
+   &__wrapper {
+      position: relative;
+   }
+   &__social {
+
+   }
+   &__contacts {
+
+   }
+}
