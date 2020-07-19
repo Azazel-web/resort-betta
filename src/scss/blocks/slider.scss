@@ -1,18 +1,10 @@
 .slider {
    position: relative;
    &__container {
-      max-width: 560px;
+      max-width: 560px; 
       margin: 0 auto;
-      overflow: hidden;
-   }
-   &__items {
-      display: flex;
-      overflow: hidden;
-      transition: transform .7s ease;
    }
    &__item {
-      flex: 0 0 100%;
-      max-width: 100%;
       color: #fff;
       text-align: center;
       &-name {
@@ -52,7 +44,6 @@
       }
    }
    &__button {
-      position: absolute;
       top: 50%;
       transform: translateY(-50%);
       height: 70px;

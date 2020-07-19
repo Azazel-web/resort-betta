@@ -290,16 +290,18 @@
                      <div class="room__item-title">Двухместный номер с балконом</div>
                      <div class="room__item-price">1500-2000 Р/сутки</div>
                      <div class="room__item-hidden">
-                        <div class="room__item-description">
-                           <svg width="17" height="17" fill="#14ad00">
-                              <use xlink:href="#check"></use>
-                           </svg>
-                           Бесплатная автостоянка,
-                           Wi-Fi, спутниковое TV,
-                           xолодильник, душ, кондиционер, кухня, сейф</div>
-                        <div class="room__detailed"><a href="#">Подробнее</a></div>
+
+                           <div class="room__item-description">
+                              <svg width="17" height="17" fill="#14ad00">
+                                 <use xlink:href="#check"></use>
+                              </svg>
+                              Бесплатная автостоянка,
+                              Wi-Fi, спутниковое TV,
+                              xолодильник, душ, кондиционер, кухня, сейф</div>
+                           <div class="room__detailed"><a href="#">Подробнее</a></div>
+
                      </div>
-                     <a href="#" class="button button--secondary">Забронировать</a>
+                     <div class="room__order"><a href="#" class="button button--secondary">Забронировать</a></div>
                   </div>
                </div>
                <div class="room__item">
@@ -325,7 +327,7 @@
                            xолодильник, душ, кондиционер, кухня, сейф</div>
                         <div class="room__detailed"><a href="#">Подробнее</a></div>
                      </div>
-                     <a href="#" class="button button--secondary">Забронировать</a>
+                     <div class="room__order"><a href="#" class="button button--secondary">Забронировать</a></div>
                   </div>
                </div>
             </div>
@@ -337,7 +339,7 @@
             <div class="title review__title">Отзывы</div>
             <div class="review__slider slider">
                <div class="slider__container">
-                  <div class="slider__items">
+                  <div class="glider">
                      <div class="slider__item">
                         <h3 class="slider__item-name">Анастасия</h3>
                         <p class="slider__item-text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -357,6 +359,7 @@
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                            exercitation
                            ullamco laboris nis»
+
                         </p>
                         <div class="slider__item-rate">
                         </div>
@@ -376,8 +379,8 @@
                      </div>
                   </div>
                </div>
-               <button class="button slider__button slider__button--prev" type="button"></button>
-               <button class="button slider__button slider__button--next" type="button"></button>
+               <button class="button slider__button slider__button--prev glider-prev"></button>
+               <button class="button slider__button slider__button--next glider-next"></button>
             </div>
          </div>
       </section>
@@ -455,7 +458,8 @@
          </div>
       </div><!-- /.footer__container -->
    </footer>
-   <script src="js/app.min.js"></script>
+   <script src="js/library/glider.min.js"></script>
+   <script src="js/main.min.js"></script>
 </body>
 
 </html>

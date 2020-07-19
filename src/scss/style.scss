@@ -64,6 +64,8 @@ a {
    color: #312c3a;
 }
 
+@import 'library/glider.scss';
+
 @import 'blocks/header.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/intro.scss';

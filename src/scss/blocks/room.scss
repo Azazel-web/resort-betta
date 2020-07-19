@@ -29,6 +29,9 @@
       margin: 0 55px 0 30px;
       display: flex;
       flex-basis: 33.33333%;
+      @media (max-width: 922px) {
+      flex-wrap: wrap;        
+      }
    }
    &__places {
       position: absolute;
@@ -45,17 +48,13 @@
       }
    }
    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
       margin-right: 42px;
 
       border-radius: 4px;
       border: 1px solid #dddada;
       border-top: none;
 
-      transition: .4s all;
+      transition: margin-top 0.3s;
       &-photo {
          position: relative;
          z-index: -1;
@@ -64,9 +63,7 @@
          border-radius: 4px;
       }
       &-content {
-         display: flex;
-         flex-direction: column;
-         
+         margin-top: 0;
          padding-left: 30px;
          padding-right: 30px;
          padding-top: 20px;
@@ -90,9 +87,7 @@
       &-hidden {
          height: 0;
          overflow: hidden;
-         
-
-         transition: .3s all;
+         transition: height 0.3s;
       }
       &-description {
          margin-bottom: 18px;
@@ -111,12 +106,11 @@
             background-color: $secondary-color-button;         
             color: #fff;
          }
-         & .room__item-hidden {
-            height: 100px;
-            margin-bottom: 15px;            
-         }
          & .room__item-content{
             margin-top: -120px;
+         }
+         & .room__item-hidden {
+            height: 120px;
          }
       }
    }
