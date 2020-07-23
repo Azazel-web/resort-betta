@@ -21,17 +21,22 @@
    &__more {
       position: absolute;
       top: 45%;
-      right: 0;
+      right: 45px;
 
       transform: translateX(-50%);
    }
    &__cards {
       margin: 0 55px 0 30px;
       display: flex;
-      flex-basis: 33.33333%;
       @media (max-width: 922px) {
       flex-wrap: wrap;        
       }
+   }
+   &__inner {
+      border-radius: 4px;
+      border: 1px solid #dddada;
+
+      transition: margin-top 0.3s;
    }
    &__places {
       position: absolute;
@@ -49,28 +54,26 @@
    }
    &__item {
       margin-right: 42px;
+      width: 33.3333%;
+      min-width: 33.3333%;
+      flex-basis: 33.3333%;
 
-      border-radius: 4px;
-      border: 1px solid #dddada;
-      border-top: none;
-
-      transition: margin-top 0.3s;
       &-photo {
          position: relative;
-         z-index: -1;
       }
       &-img {
          border-radius: 4px;
       }
       &-content {
-         margin-top: 0;
+         position: relative;
+         z-index: 1;
          padding-left: 30px;
          padding-right: 30px;
          padding-top: 20px;
          padding-bottom: 30px;
 
          background-color: #fff;
-         transition: .4s all;
+         transition: margin-top .3s;
       }
       &-title {         
          font-weight: bold;
@@ -87,7 +90,7 @@
       &-hidden {
          height: 0;
          overflow: hidden;
-         transition: height 0.3s;
+         transition: height .3s;
       }
       &-description {
          margin-bottom: 18px;

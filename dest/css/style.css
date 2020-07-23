@@ -638,7 +638,7 @@ a {
 .room__more {
   position: absolute;
   top: 45%;
-  right: 0;
+  right: 45px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -649,8 +649,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 33.33333%;
-      flex-basis: 33.33333%;
 }
 
 @media (max-width: 922px) {
@@ -658,6 +656,14 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.room__inner {
+  border-radius: 4px;
+  border: 1px solid #dddada;
+  -webkit-transition: margin-top 0.3s;
+  -o-transition: margin-top 0.3s;
+  transition: margin-top 0.3s;
 }
 
 .room__places {
@@ -681,17 +687,14 @@ a {
 
 .room__item {
   margin-right: 42px;
-  border-radius: 4px;
-  border: 1px solid #dddada;
-  border-top: none;
-  -webkit-transition: margin-top 0.3s;
-  -o-transition: margin-top 0.3s;
-  transition: margin-top 0.3s;
+  width: 33.3333%;
+  min-width: 33.3333%;
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
 }
 
 .room__item-photo {
   position: relative;
-  z-index: -1;
 }
 
 .room__item-img {
@@ -699,15 +702,16 @@ a {
 }
 
 .room__item-content {
-  margin-top: 0;
+  position: relative;
+  z-index: 1;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: #fff;
-  -webkit-transition: .4s all;
-  -o-transition: .4s all;
-  transition: .4s all;
+  -webkit-transition: margin-top .3s;
+  -o-transition: margin-top .3s;
+  transition: margin-top .3s;
 }
 
 .room__item-title {
@@ -727,9 +731,9 @@ a {
 .room__item-hidden {
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s;
+  -webkit-transition: height .3s;
+  -o-transition: height .3s;
+  transition: height .3s;
 }
 
 .room__item-description {
