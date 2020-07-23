@@ -1,11 +1,10 @@
 .room {
    padding-bottom: 107px;
-   &__wrapper {
+   &__headline {
       position: relative;
-   }
-   &__title {
-      padding: 60px 0;
-      position: relative;
+
+      padding-top: 40px;
+      margin-bottom: 40px;
       &::before {
          content: "";
          display: block;
@@ -18,16 +17,23 @@
          background-color: #b58c5d;
       }
    }
+   &__title {
+      position: relative;
+   }
    &__more {
       position: absolute;
-      top: 45%;
+      top: 65%;
       right: 45px;
 
       transform: translateX(-50%);
    }
    &__cards {
-      margin: 0 55px 0 30px;
       display: flex;
+
+      width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+
       @media (max-width: 922px) {
       flex-wrap: wrap;        
       }
@@ -55,9 +61,10 @@
    &__item {
       margin-right: 42px;
       width: 33.3333%;
-      min-width: 33.3333%;
+      max-width: 33.3333%;
       flex-basis: 33.3333%;
-
+      
+      transition: box-shadow .3s;
       &-photo {
          position: relative;
       }
