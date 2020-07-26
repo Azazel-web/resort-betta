@@ -1,5 +1,4 @@
 .room {
-   padding-bottom: 107px;
    &__headline {
       position: relative;
 
@@ -30,12 +29,15 @@
    &__cards {
       display: flex;
 
-      width: 980px;
       margin: 0 auto;
       padding: 0 20px;
-
-      @media (max-width: 922px) {
-      flex-wrap: wrap;        
+      &-inside {
+         @media (max-width: 970px) {
+            overflow: auto;
+         }         
+      }
+      @media (min-width: 980px) {
+         width: 980px;
       }
    }
    &__inner {
@@ -57,13 +59,11 @@
          margin-left: 10px;
          color: #fff;
       }
+      @media (max-width: 980px) {
+         display: none;
+      }
    }
-   &__item {
-      margin-right: 42px;
-      width: 33.3333%;
-      max-width: 33.3333%;
-      flex-basis: 33.3333%;
-      
+   &__item {      
       transition: box-shadow .3s;
       &-photo {
          position: relative;
@@ -123,6 +123,19 @@
             height: 120px;
          }
       }
+      @media (min-width: 980px) {
+         width: 33.3333%;
+         max-width: 33.3333%;
+         flex-basis: 33.3333%;
+
+         margin-right: 42px;
+      }
+      @media (max-width: 979px) {
+         width: 371px;
+         max-width: 371px;
+         flex-basis: 371px;
+         padding-left: 10px;
+      }
    }
    &__detailed {
       font-weight: bold;
@@ -135,5 +148,11 @@
    &__order {
       display: flex;
       justify-content: center;
+   }
+   @media (max-width: 980px) {
+      padding-bottom: 70px;
+   }
+   @media (min-width: 980px) {
+      padding-bottom: 100px;
    }
 }
