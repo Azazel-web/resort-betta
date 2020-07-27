@@ -34,5 +34,10 @@
          color: #fff;
          background-color: $secondary-color-button;
       }
+      @media (max-width: 979px) {
+         padding: 13px 100px;
+         color: #fff;
+         background-color: $secondary-color-button;    
+      }
    }
 }

@@ -20,10 +20,20 @@
       color: #fefefe;
       width: 30%;
       margin: 0 auto;
+      @media (max-width: 980px) {
+         width: 40%;
+
+         font-size: 30px;
+         line-height: 30px;
+      }
    }
    &__subtitle {
       font-size: 22px;
       line-height: 30px;
       color: #fdfdfd;
+      @media (max-width: 980px) {
+         font-size: 18px;
+         line-height: 50px;
+      }
    }
 }

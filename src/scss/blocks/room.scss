@@ -31,11 +31,13 @@
 
       margin: 0 auto;
       padding: 0 20px;
+
       &-inside {
-         @media (max-width: 970px) {
+         @media (max-width: 979px) {
             overflow: auto;
          }         
       }
+
       @media (min-width: 980px) {
          width: 980px;
       }
@@ -59,7 +61,7 @@
          margin-left: 10px;
          color: #fff;
       }
-      @media (max-width: 980px) {
+      @media (max-width: 979px) {
          display: none;
       }
    }
@@ -81,69 +83,147 @@
 
          background-color: #fff;
          transition: margin-top .3s;
+
+         @media (max-width: 979px) {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+         }
       }
       &-title {         
          font-weight: bold;
          font-size: 20px;
          line-height: 27px;      
          color: #1a1424;
-      }
-      &-price {
-         margin-bottom: 30px;
-         font-size: 18px;
-         line-height: 25px;
-         color: rgba(26, 20, 36, 0.9);
+         @media (max-width: 979px) {
+            font-size: 14px;
+         }
       }
       &-hidden {
          height: 0;
          overflow: hidden;
-         transition: height .3s;
+         transition: height .3s;  
+
+            @media (max-width: 979px) {
+               height: auto;
+            }
       }
       &-description {
          margin-bottom: 18px;
          font-size: 13px;
          line-height: 18px;
          color: #6C656F;
+         @media (min-width: 980px) {
+            max-height: 75px;
+            overflow: hidden;
+         }
       }
 
       &:last-child {
          margin-right: 0;
       }
 
-      &:hover {
-         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-         & .button--secondary {
-            background-color: $secondary-color-button;         
-            color: #fff;
-         }
-         & .room__item-content{
-            margin-top: -120px;
-         }
-         & .room__item-hidden {
-            height: 120px;
-         }
-      }
+
       @media (min-width: 980px) {
          width: 33.3333%;
          max-width: 33.3333%;
          flex-basis: 33.3333%;
-
+         
          margin-right: 42px;
+         &:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            & .button--secondary {
+               background-color: $secondary-color-button;         
+               color: #fff;
+            }
+            & .room__item-content{
+               margin-top: -120px;
+            }
+            & .room__item-hidden {
+               height: 120px;
+            }
+         }
       }
       @media (max-width: 979px) {
-         width: 371px;
-         max-width: 371px;
+         min-width: 371px;
          flex-basis: 371px;
          padding-left: 10px;
+         
+      }
+   }
+   &__columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 979px){
+         margin-bottom: 15px;
+         & .room__price {
+            display: block;
+         }
+      }
+      @media (min-width: 980px) {
+         justify-content: center;
+
+         & .room__price {
+            display: none;
+         }
+      }
+   }
+   &__price {
+      display: none;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(26, 20, 36, 0.9);
+      &-num {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 1;
+         text-align: right;
+         color: #1a1424;
+      }
+      &-text {
+         font-size: 13px;
+         line-height: 1;
+         color: #1a1424;
+         margin-top: 5px;
+      }
+      @media (min-width: 980px) {
+         display: block;
+         margin-bottom: 30px;
       }
    }
    &__detailed {
+      position: relative;
+
+      text-align: center;
+
       font-weight: bold;
       font-size: 14px;
       line-height: 19px;
-      text-align: center;
       color: $secondary-color-button;
       cursor: pointer;
+      
+      @media (max-width: 979px) {
+         text-align: left;
+
+         &::after {
+            content: "";
+            position: absolute;
+
+            top: 7px;
+            right: -20px;
+
+            width: 8px;
+            height: 8px;
+            
+            border-top: 1px solid $secondary-color-button;
+            border-right: 1px solid $secondary-color-button;
+
+            transform: rotate(45deg);
+         }
+
+      }
    }
    &__order {
       display: flex;
