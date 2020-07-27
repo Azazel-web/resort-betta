@@ -1,7 +1,6 @@
 .room {
    &__headline {
       position: relative;
-
       padding-top: 40px;
       margin-bottom: 40px;
       &::before {
@@ -97,7 +96,15 @@
          line-height: 27px;      
          color: #1a1424;
          @media (max-width: 979px) {
+            & .room__places {
+               display: flex;
+            }
             font-size: 14px;
+         }
+         @media (min-width: 980px) {
+            & .room__places {
+               display: none;
+            }
          }
       }
       &-hidden {
@@ -222,7 +229,6 @@
 
             transform: rotate(45deg);
          }
-
       }
    }
    &__order {

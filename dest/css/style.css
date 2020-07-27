@@ -769,6 +769,17 @@ a {
   .room__item-title {
     font-size: 14px;
   }
+  .room__item-title .room__places {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 980px) {
+  .room__item-title .room__places {
+    display: none;
+  }
 }
 
 .room__item-hidden {
