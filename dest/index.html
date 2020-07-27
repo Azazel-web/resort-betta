@@ -5,6 +5,23 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.min.css">
+   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
    <title>Document</title>
 </head>
 
@@ -198,24 +215,27 @@
                   <div class="promo__content">
 
                      <div class="promo__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate
-                        velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt
-                        in
-                        culpa
-                        qui officia deserunt mollit anim id est laborum.
+                        <span class="promo__svg">
+                           <svg width="110" height="81">
+                              <use xlink:href="#promo-frame"></use>
+                           </svg>
+                        </span>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                           exercitation
+                           ullamco
+                           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                           voluptate
+                           velit
+                           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                           sunt
+                           in
+                           culpa
+                           qui officia deserunt mollit anim id est laborum.
+                        </p>
                      </div>
 
-                     <span class="promo__svg">
-                        <svg width="110" height="81">
-                           <use xlink:href="#promo-frame"></use>
-                        </svg>
-                     </span>
                      <div class="promo__more">
                         <a class="button button--primary">
                            <span>Подробнее</span>
@@ -233,10 +253,9 @@
 
          <!-- Room -->
          <section class="room">
+
             <div class="room__headline container">
-
-               <div class="room__title title">Номера</div>
-
+               <div class="title">Номера</div>
                <div class="room__more">
                   <a class="button button--primary " href="">
                      <span>Все номера</span>
@@ -254,10 +273,10 @@
                   <div class="room__item">
                      <div class="room__inner">
                         <div class="room__item-photo">
-                           <picture>
+                           <picture class="room__item-img">
                               <source media="(max-width: 979px)" srcset="img/cards-room-max.jpg" type="image/png">
                               <source media="(min-width: 980px)" srcset="img/cards-room-min.jpg" type="image/png">
-                              <img class="room__item-img" src="img/cards-room-min.jpg" alt="room">
+                              <img src="img/cards-room-min.jpg" alt="room">
                            </picture>
                            <div class="room__places">
                               <svg width="17" height="26">
@@ -282,7 +301,6 @@
                                  <svg width="17" height="17" fill="#14ad00">
                                     <use xlink:href="#check"></use>
                                  </svg>
-
                                  Кондиционер, wi-fi, ванная комната, плита, электрический чайник, холодильник, комплект
                                  посуды на 3 персоны, обеденный&nbsp;стол, кухонные принадлежности, телевизор с плоским
                                  экраном, кабельные каналы, гладильные принадлежности, сушилка для одежды, полотенца,
@@ -303,10 +321,10 @@
                   <div class="room__item">
                      <div class="room__inner">
                         <div class="room__item-photo">
-                           <picture>
+                           <picture class="room__item-img">
                               <source media="(max-width: 979px)" srcset="img/cards-room-max.jpg" type="image/png">
                               <source media="(min-width: 980px)" srcset="img/cards-room-min.jpg" type="image/png">
-                              <img class="room__item-img" src="img/cards-room-min.jpg" alt="room">
+                              <img src="img/cards-room-min.jpg" alt="room">
                            </picture>
                            <div class="room__places">
                               <svg width="17" height="26">
@@ -350,10 +368,10 @@
                   <div class="room__item">
                      <div class="room__inner">
                         <div class="room__item-photo">
-                           <picture>
+                           <picture class="room__item-img">
                               <source media="(max-width: 979px)" srcset="img/cards-room-max.jpg" type="image/png">
                               <source media="(min-width: 980px)" srcset="img/cards-room-min.jpg" type="image/png">
-                              <img class="room__item-img" src="img/cards-room-min.jpg" alt="room">
+                              <img src="img/cards-room-min.jpg" alt="room">
                            </picture>
                            <div class="room__places">
                               <svg width="17" height="26">
@@ -395,6 +413,19 @@
                      </div>
                   </div>
                </div><!-- /.room__cards -->
+
+            </div>
+            <div class="room__wrapper">
+               <div class="room__more">
+                  <a class="button button--primary " href="">
+                     <span>Все номера</span>
+                     <span class="svg-icon svg-icon--button-next">
+                        <svg width="16" height="16">
+                           <use xlink:href="#button-next"></use>
+                        </svg>
+                     </span>
+                  </a>
+               </div>
             </div>
          </section>
          <!-- Review -->

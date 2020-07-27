@@ -595,22 +595,35 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .promo__img {
-  height: 100%;
+  width: 71%;
 }
 
-.promo__content {
-  position: relative;
+@media (min-width: 980px) {
+  .promo__img {
+    width: 380px;
+    max-width: 380px;
+    -ms-flex-preferred-size: 380px;
+        flex-basis: 380px;
+  }
+}
+
+@media (max-width: 979px) {
+  .promo__content {
+    margin-top: -40px;
+  }
 }
 
 .promo__text {
-  margin-top: 17px;
+  position: relative;
+  margin-left: 150px;
   margin-bottom: 45px;
-  margin-left: -50px;
-  padding: 30px;
-  width: 610px;
+  max-width: 100%;
+  padding: 20px;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -619,19 +632,55 @@ a {
   color: #896f50;
 }
 
+@media (min-width: 980px) {
+  .promo__text {
+    width: 610px;
+    margin-top: 17px;
+    margin-left: -50px;
+    padding: 30px;
+  }
+}
+
 .promo__svg {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+}
+
+@media (max-width: 979px) {
+  .promo__svg {
+    right: 13px;
+    bottom: 100%;
+    margin-bottom: -10px;
+  }
+}
+
+@media (min-width: 980px) {
+  .promo__svg {
+    bottom: -60px;
+    left: 40px;
+  }
 }
 
 .promo__more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 980px) {
+  .promo__more {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (max-width: 979px) {
+  .promo {
+    padding: 70px 0;
+  }
 }
 
 .room__headline {
@@ -654,17 +703,27 @@ a {
   background-color: #b58c5d;
 }
 
-.room__title {
-  position: relative;
+@media (max-width: 979px) {
+  .room__headline .room__more {
+    display: none;
+  }
 }
 
-.room__more {
-  position: absolute;
-  top: 65%;
-  right: 45px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+@media (max-width: 979px) {
+  .room__more {
+    text-align: center;
+  }
+}
+
+@media (min-width: 980px) {
+  .room__more {
+    position: absolute;
+    top: 65%;
+    right: 45px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .room__cards {
@@ -678,12 +737,16 @@ a {
 @media (max-width: 979px) {
   .room__cards-inside {
     overflow: auto;
+    margin-bottom: 40px;
   }
 }
 
 @media (min-width: 980px) {
   .room__cards {
     width: 980px;
+    max-width: 980px;
+    -ms-flex-preferred-size: 980px;
+        flex-basis: 980px;
   }
 }
 
@@ -696,15 +759,15 @@ a {
 }
 
 .room__places {
-  position: absolute;
-  top: -10px;
-  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: -10px;
+  right: 10px;
   padding: 9px;
   background-color: #34c6bd;
 }
@@ -732,7 +795,7 @@ a {
   position: relative;
 }
 
-.room__item-img {
+.room__item-img img {
   border-radius: 4px;
 }
 
@@ -946,9 +1009,15 @@ a {
           justify-content: center;
 }
 
+@media (min-width: 980px) {
+  .room__wrapper .room__more {
+    display: none;
+  }
+}
+
 @media (max-width: 980px) {
   .room {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1064,9 +1133,9 @@ a {
   padding: 0;
   border: none;
   outline: none;
-  -webkit-transition: .3s all;
-  -o-transition: .3s all;
-  transition: .3s all;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 .button--primary {
@@ -1080,6 +1149,12 @@ a {
 .button--primary:hover {
   background-color: #1a1424;
   color: #fff;
+}
+
+@media (max-width: 979px) {
+  .button--primary {
+    padding: 13px 150px;
+  }
 }
 
 .button--secondary {
@@ -1110,7 +1185,7 @@ a {
 
 .svg-icon--button-next {
   position: absolute;
-  right: 14%;
+  right: 20px;
   top: 50%;
   height: 16px;
   width: 16px;
